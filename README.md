@@ -83,8 +83,11 @@
  3. webhook으로 구글채팅 '점심 메뉴 알림' 스페이스에 점심메뉴 추천 결과를 전달한다.
  
 
- 4. lnch_record 테이블에 오늘 날짜와 점심메뉴 추천 결과를 저장한다.<br><br>
+ 4. lnch_record 테이블에 오늘 날짜와 점심메뉴 추천 결과를 저장한다.<br><br><br>
 
+ ### 🤹🏻‍♂️ 메뉴 추천 프로그램 수동 실행
+    python3 main.py
+<br>
 
  ### 🎟️ 음식점 등록
     python3 menu_registrant.py
