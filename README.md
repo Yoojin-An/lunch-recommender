@@ -86,10 +86,10 @@
  4. lnch_record 테이블에 오늘 날짜와 점심메뉴 추천 결과를 저장한다.<br><br>
 
 
- ### 📍음식점 등록 방법
+ ### 🎟️ 음식점 등록 방법
     python3 menu_registrant.py
 <br>
 
- ### 🔮 우선순위 등록 방법
+ ### 🥇 우선순위 등록 방법
     python3 priority_registrant.py
  <br>
