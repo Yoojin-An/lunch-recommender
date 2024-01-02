@@ -8,7 +8,7 @@
 <br> <br>
 
 ### ⌨️ 실행 방식
- * crontab과 쉘 스크립트로 주중 매일 11시 20분에 실행
+ * crontab과 쉘 스크립트로 주중 매일 11시 20분에 실행(공휴일 제외)
  * 스크립트 참조 경로: ~/.bash_profile에 정의된 $LUNCH_PATH 하위의 lunch.sh
 <br> <br>
 
