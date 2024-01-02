@@ -8,7 +8,7 @@
 <br> <br>
 
 ### ⌨️ 실행 방식
- * crontab과 쉘 스크립트로 주중 매일 11시 20분에 실행(공휴일 제외)
+ * crontab과 쉘 스크립트로 주중 매일 11시 20분에 자동 실행(공휴일 제외)
  * 스크립트 참조 경로: ~/.bash_profile에 정의된 $LUNCH_PATH 하위의 lunch.sh
 <br> <br>
 
@@ -85,11 +85,11 @@
 
  4. lnch_record 테이블에 오늘 날짜와 점심메뉴 추천 결과를 저장한다.<br><br><br>
 
- ### 🤹🏻‍♂️ 메뉴 추천 프로그램 수동 실행
+ ### 🎲 메뉴 추천 프로그램 수동 실행
     python3 main.py
 <br>
 
- ### 🎟️ 음식점 등록
+ ### 🏷️ 음식점 등록
     python3 menu_registrant.py
 <br>
 
