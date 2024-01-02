@@ -51,9 +51,9 @@
 <br>
 
 ### 👀 메뉴 선택 옵션
- * ex: 제외할 음식 종류나 음식점 이름(default: None, lnch_menu.CLASSIFICATION 또는 lnch_menu.RESTAURANT_NM과 매핑)
- * in: 포함할 음식 종류(default: None, lnch_menu.CLASSIFICATION과 매핑)
  * d: 거리(default: near, all/near)
+ * ex: 제외할 음식 종류나 음식점 이름(default: None, lnch_menu.CLASSIFICATION(음식 종류) 또는 lnch_menu.RESTAURANT_NM(음식점 이름)과 매핑)
+ * priority: 우선순위로 적용할 음식 종류나 음식점 이름(① 최다 득표, ② 득표 수 동률 시 우선 등록 기준으로 선정, lnch_menu와의 매핑 정보는 ex와 동일)
 <br> <br>
 
 
@@ -88,12 +88,8 @@
 
  ### 📍음식점 등록 방법
     python3 menu_registrant.py
-
-
 <br>
 
  ### 🔮 우선순위 등록 방법
     python3 priority_registrant.py
-    
-    * 우선순위는 1) 최다 득표, 2) 득표 수 동률 시 우선 등록 기준으로 선정
  <br>
