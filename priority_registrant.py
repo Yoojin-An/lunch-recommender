@@ -17,8 +17,7 @@ class Registrant:
         retry = 0
 
         # lock 획득
-        # while not self.try_lock(key):
-        while True:
+        while not self.try_lock(key):
             if retry == max_try:
                 break
             try: 
