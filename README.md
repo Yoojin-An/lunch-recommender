@@ -26,6 +26,14 @@
         PW varchar(12)
         );
 
+        -- 메뉴 테이블 trigger 생성(id_no 기준으로 seq_no 부여)
+        DELIMITER $$
+        CREATE TRIGGER set_seq_no
+        BEFORE INSERT ON lnch_menu
+        FOR EACH ROW
+        SET NEW.seq_no = COALESCE((SELECT MAX(seq_no) FROM lnch_menu WHERE id_no = NEW.id_no), 0) + 1;$$
+        DELIMITER ;
+
         -- 메뉴 테이블
         CREATE TABLE lnch_menu (
         ID_NO int comment 'lnch_user.SEQ_NO',
@@ -34,14 +42,6 @@
         RESTAURANT_NM varchar(10) comment '음식점 이름',
         DISTANCE varchar(2) comment 'N: 근거리, F: 원거리'
         );
-
-        -- 메뉴 테이블 - id_no 기준으로 seq_no를 생성하도록 trigger 생성
-        DELIMITER $$
-        CREATE TRIGGER set_seq_no
-        BEFORE INSERT ON lnch_menu
-        FOR EACH ROW
-        SET NEW.seq_no = COALESCE((SELECT MAX(seq_no) FROM lnch_menu WHERE id_no = NEW.id_no), 0) + 1;$$
-        DELIMITER ;
 
         -- 기록 테이블
         CREATE TABLE lnch_record (
