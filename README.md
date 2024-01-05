@@ -54,7 +54,11 @@
 ### 👀 메뉴 선택 옵션
  * d: 거리(default: near, all/near)
  * ex: 제외할 음식 종류나 음식점 이름(default: None, lnch_menu.CLASSIFICATION(음식 종류) 또는 lnch_menu.RESTAURANT_NM(음식점 이름)과 매핑)
- * priority: 우선순위로 적용할 음식 종류나 음식점 이름(① 최다 득표, ② 득표 수 동률 시 우선 등록 기준으로 선정, lnch_menu와의 매핑 정보는 ex와 동일)
+ * priority: 우선순위로 적용할 음식 종류나 음식점 이름(lnch_menu와의 매핑 정보는 ex와 동일) <br>
+ 
+    <우선순위 선정 기준>
+    ① 최다 득표
+    ② 득표 수 동률 시 우선 등록 기준으로 선정
 <br> <br>
 
 
